@@ -13,7 +13,7 @@ KEY OBJECTIVES
 1. Profile Analysis: 
 Retrieve essential data from any public Instagram profile, including follower count, following count and the total number of posts.
 
-# 2. Post Data Collection: 
+2. Post Data Collection: 
 Automatically collect data from the latest 200 posts, including:
    * Post URL
    * Number of Likes
@@ -21,11 +21,11 @@ Automatically collect data from the latest 200 posts, including:
    * Hashtags used in the caption
    * Date and Timestamp of each post
 
-# 3. Data Export: 
+3. Data Export: 
 Store the scraped data in a structured JSON format, enabling easy further analysis and insights extraction.
 
 
-# REQUIREMENTS
+REQUIREMENTS
 
 To run this project, you need the following dependencies installed:
 * Python 3.x
@@ -34,9 +34,9 @@ To run this project, you need the following dependencies installed:
 * Google Chrome - Latest version, to match with WebDriver
 
 
-# KEY FEATURES
+KEY FEATURES
 
-# 1. Data Collection
+1. Data Collection
 Automated Web Scraping:
 Utilizes Selenium WebDriver to log into Instagram and scrape profile details, posts, likes, comments and hashtags.
 
@@ -66,7 +66,7 @@ Error Handling and Robust Navigation:
 Handles common Selenium errors like ElementNotVisibleException and TimeoutException to ensure smooth, uninterrupted scraping.
 
 
-# 2. Exploratory Data Analysis (EDA)
+2. Exploratory Data Analysis (EDA)
 
 Visualizing Engagement:
 Distribution of likes and comments across posts.
@@ -79,7 +79,7 @@ Location Insights:
 Analyzes location-wise average likes to understand audience preferences.
 
 
-# 3. Machine Learning
+3. Machine Learning
 
 Implements various regression algorithms to predict likes based on features:
 Linear Regression.
@@ -93,13 +93,13 @@ R - Squared Score.
 Results indicate the predictive performance of different models for engagement metrics.
 
 
-# 4. Deep Learning
+4. Deep Learning
 
-# Bidirectional LSTM for Hashtag-Based Predictions:
+Bidirectional LSTM for Hashtag-Based Predictions:
 Tokenizes hashtags and creates embeddings for training.
 Leverages sequential information in hashtags for predicting likes.
 
-# Model Architecture:
+Model Architecture:
 Embedding Layer: Converts hashtags into dense vector representations.
 Bi - LSTM Layer: Captures contextual and sequential dependencies.
 Fully Connected Layers: Outputs predicted likes as a regression problem.
@@ -107,61 +107,60 @@ Training and Optimization:
 Early stopping to prevent overfitting.
 Dynamic learning rate scheduling.
 
-# 5. Visualizations
+5. Visualizations
 
 Bar Plot: Top 10 videos by views.
 Box Plot: Likes distribution based on hashtags.
 Line Chart: Monthly engagement trends.
 Pie Chart: Top hashtags by frequency.
 
-			
-# 6. Dynamic Hashtag Prediction
+6. Dynamic Hashtag Prediction
 
 Accepts user - defined hashtags to predict likes using the trained deep learning model.
 Enables real - time predictions for new hashtag strategies.
 
 
-# PROJECT FILE DESCRIPTION
+PROJECT FILE DESCRIPTION
 
-# Project Files			                  File Description
-Web_Scraper.py			                  Script for scraping Instagram data using Selenium.
-instagram_profile_beebomco.json	      JSON file containing the scraped Instagram data for analysis.
-Tech_Instagram_Analysis.ipynb	        Jupyter Notebook for EDA, ML / DL training and visualizations.
-requirements.txt		                  List of dependencies required for the project.
+Project Files			                  	File Description
+Web_Scraper.py			                  	Script for scraping Instagram data using Selenium.
+instagram_profile_beebomco.json	      			JSON file containing the scraped Instagram data for analysis.
+Tech_Instagram_Analysis.ipynb	        		Jupyter Notebook for EDA, ML / DL training and visualizations.
+requirements.txt		                  	List of dependencies required for the project.
 README.md			                        This comprehensive project documentation.
 
 
-# INSTALLATION
-# 1. Clone the Repository:
+INSTALLATION
+1. Clone the Repository:
 
 git clone https://github.com/yourusername/instagram-engagement-tool.git
 
 cd instagram-engagement-tool
 
 
-# 2. Install Dependencies
+2. Install Dependencies
 
 Install required libraries via pip:
 
 pip install -r requirements.txt
 
 
-# 3. Set Up WebDriver
+3. Set Up WebDriver
 
 Ensure the Google Chrome browser is installed and WebDriverManager is configured.
 
 
-# USAGE
+USAGE
 
-# Step 1: Data Collection using Instagram Scraping with Selenium
+Step 1: Data Collection using Instagram Scraping with Selenium
 
-# 1. Setting Up Login Credentials
+1. Setting Up Login Credentials
 For Instagram authentication, update the Web Scraper.py file with your Instagram username and password:
 username = "your_username"
 password = "your_password"
 Note: Use caution with storing sensitive information and avoid sharing it publicly.
 
-# 2. Running the Script
+2. Running the Script
 Execute the main script to start the scraping process:
 python Web Scraper.py
 This script will:
@@ -169,7 +168,7 @@ This script will:
 2. Navigate to the target Instagram profile (e.g., beebomco).
 3. Scroll to the most recent posts and retrieve details from the latest 200 posts.
 
-# 3. Output
+3. Output
 The data is saved in beebomco_data.json, with each post containing:
 * Post ID: Unique identifier for the post.
 * Post URL: Direct URL to the Instagram post.
@@ -180,7 +179,7 @@ The data is saved in beebomco_data.json, with each post containing:
 * Timestamp: Date and time of the post.
 * Comments: Detailed list of comments with usernames.
 
-# Example Output (JSON Structure)
+Example Output (JSON Structure)
 Below is a sample format for the output JSON file:
 {
     "profile": {
@@ -212,15 +211,15 @@ Below is a sample format for the output JSON file:
     }
 }
 
-# Step 2: Data Analysis
+Step 2: Data Analysis
 
 Open the Jupyter Notebook (Tech_Instagram_Analysis.ipynb) to perform:
 Visualization of likes, comments and hashtags.
 Analysis of engagement patterns across time and locations.
 
 
-# Step 3: Model Training
-# Machine Learning:
+Step 3: Model Training
+Machine Learning:
 
 Train models to predict likes based on post features.
 
@@ -229,7 +228,7 @@ from sklearn.linear_model import Ridge
 model = Ridge().fit(X_train, y_train)
 
 
-# Deep Learning:
+Deep Learning:
 
 Train Bi - LSTM for hashtag-based predictions.
 
@@ -238,27 +237,27 @@ from keras.models import Sequential
 model.fit(X_train, y_train, epochs = 50, validation_split = 0.1)
 
 
-# Step 4: Predictions
+Step 4: Predictions
 
 Dynamic Hashtag Input:
 
 predict_likes("#technology")  # Predict likes for the hashtag
 
 
-# RESULTS AND VISUALIZATIONS
+RESULTS AND VISUALIZATIONS
   
-# 1. Key Insights
-# Temporal Trends:
+1. Key Insights
+Temporal Trends:
 Engagement is highest on weekends and during specific times of the day.
 
-# Hashtag Analysis:
+Hashtag Analysis:
 Certain hashtags consistently outperform others in driving likes.
 
-# Location Analysis:
+Location Analysis:
 Posts tagged with "Beebom" locations had the highest average likes.
 
 
-# 2. Visual Outputs
+2. Visual Outputs
 
 Bar Plot: Top 10 videos by views.
 Pie Chart: Most frequently used hashtags.
@@ -266,41 +265,41 @@ Line Plot: Monthly engagement trends.
 Scatter Plot: Actual vs. Predicted Likes.
 
 		
-# 3. Model Performance
+3. Model Performance
 
-# Machine Learning Models:
-      Model			      MAE		         R²
-Ridge Regression	76464914.23	  6786.53	0.37
+Machine Learning Models:
+      Model			MSE         MAE	         R²
+Ridge Regression	  76464914.23	  6786.53	0.37
 Random Forest		  88460152.91	  6909.44	0.27
 
-# Deep Learning:
+Deep Learning:
 Metric		      Value
-Test Loss (MSE)	623569.32
+Test Loss (MSE)	      623569.32
 Test MAE	      550.29
 
 
-# KNOWN LIMITATIONS
+KNOWN LIMITATIONS
 
-# Web Scraping Challenges:
+Web Scraping Challenges:
 Instagram's DOM structure changes frequently, requiring script updates.
 Automated scraping may trigger Instagram's rate - limiting mechanisms.
 
-# Limited Feature Set:
+Limited Feature Set:
 Additional features like user demographics and caption sentiment could improve predictions.
 
 
-# FUTURE ENHANCEMENTS
-# Web App Deployment:
+FUTURE ENHANCEMENTS
+Web App Deployment:
 Convert the tool into an interactive web application for broader usability.
 
-# Expanded Analysis:
+Expanded Analysis:
 Incorporate more features like post format (image, video) and caption analysis.
 
-# Advanced Visualizations:
+Advanced Visualizations:
 Interactive dashboards for real - time engagement monitoring.
 
 
-# DEPLOYMENT
+DEPLOYMENT
 
 You can deploy this project on any platform that supports Python and Selenium. For best results:
 1. Ensure the latest version of Chrome and WebDriver are installed.
@@ -308,11 +307,11 @@ You can deploy this project on any platform that supports Python and Selenium. F
 Tip: For frequent scraping, consider rotating IPs or adding delays to prevent rate - limiting by Instagram.
 
 
-# CONTRIBUTIONS
+CONTRIBUTIONS
 
 We welcome contributions to improve this project. Open issues or submit pull requests on GitHub.
 
 
-# LICENSE
+LICENSE
 
 This project is licensed under the MIT License. See the LICENSE file for details.
