@@ -1,18 +1,16 @@
-# Instagram-Reach-Analysis-on-Technology:
-
 # INSTAGRAM REACH ANALYSIS AND PREDICTION TOOL ON TECHNOLOGY USING MACHINE LEARNING AND DEEP LEARNING TECHNIQUES
 
 
-# PROJECT OVERVIEW
+PROJECT OVERVIEW
 
 The Instagram Engagement Analysis and Prediction Tool is an advanced Python - based project designed to collect, analyze and predict Instagram engagement metrics using state - of - the - art techniques. This project automates the collection of Instagram data via Selenium, explores insights using Exploratory Data Analysis (EDA) and leverages both Machine Learning (ML) and Deep Learning (DL) models for predicting likes on posts based on hashtags and other features.
 
 With a comprehensive dataset of 200 Instagram posts, this project provides a robust platform for social media managers, influencers and analysts to understand trends, optimize content strategies and predict user engagement.
 
 
-# KEY OBJECTIVES
+KEY OBJECTIVES
 
-# 1. Profile Analysis: 
+1. Profile Analysis: 
 Retrieve essential data from any public Instagram profile, including follower count, following count and the total number of posts.
 
 # 2. Post Data Collection: 
